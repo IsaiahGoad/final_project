@@ -1,0 +1,380 @@
+The target system is: Linux -  - riscv
+The host system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: -mcmodel=medany;-mabi=lp64d;-mcmodel=medany;-mabi=lp64d;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/app/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: -mcmodel=medany;-mabi=lp64d;-mcmodel=medany;-mabi=lp64d;
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/app/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_402ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_402ab.dir/build.make CMakeFiles/cmTC_402ab.dir/build
+gmake[1]: Entering directory '/app/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o
+/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot   -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d     -v -o CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc
+Target: riscv64-unknown-linux-musl
+Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c,c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (crosstool-NG 1.27.0) 
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/'
+ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/cc1 -quiet -v -imultilib . -iprefix /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/ -isysroot /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_402ab.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcmodel=medany -mcmodel=medany -mabi=lp64d -march=rv64imafdc_zicsr_zifencei -misa-spec=20191213 -mtls-dialect=trad -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccFwkgaS.s
+GNU C17 (crosstool-NG 1.27.0) version 14.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 11.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/include"
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include"
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include
+End of search list.
+Compiler executable checksum: c475fbc40b9395617cb2b623f110c618
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/'
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o /tmp/ccFwkgaS.s
+GNU assembler version 2.43.1 (riscv64-unknown-linux-musl) using BFD version (crosstool-NG 1.27.0) 2.43.1
+COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_402ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_402ab.dir/link.txt --verbose=1
+/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -v CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -o cmTC_402ab   -L/app/build/CMakeFiles/CMakeTmp/. 
+Using built-in specs.
+COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc
+COLLECT_LTO_WRAPPER=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/lto-wrapper
+Target: riscv64-unknown-linux-musl
+Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c,c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (crosstool-NG 1.27.0) 
+COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_402ab' '-L/app/build/CMakeFiles/CMakeTmp/.' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_402ab.'
+ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2 --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --eh-frame-hdr -melf64lriscv -X -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_402ab /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o -L/app/build/CMakeFiles/CMakeTmp/. -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0 -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_402ab' '-L/app/build/CMakeFiles/CMakeTmp/.' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_402ab.'
+gmake[1]: Leaving directory '/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include]
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+    add: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  implicit include dirs: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/include;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_402ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_402ab.dir/build.make CMakeFiles/cmTC_402ab.dir/build]
+  ignore line: [gmake[1]: Entering directory '/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot   -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d     -v -o CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.0 (crosstool-NG 1.27.0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/']
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/cc1 -quiet -v -imultilib . -iprefix /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/ -isysroot /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_402ab.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcmodel=medany -mcmodel=medany -mabi=lp64d -march=rv64imafdc_zicsr_zifencei -misa-spec=20191213 -mtls-dialect=trad -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccFwkgaS.s]
+  ignore line: [GNU C17 (crosstool-NG 1.27.0) version 14.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/include"]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include"]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: c475fbc40b9395617cb2b623f110c618]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/']
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o /tmp/ccFwkgaS.s]
+  ignore line: [GNU assembler version 2.43.1 (riscv64-unknown-linux-musl) using BFD version (crosstool-NG 1.27.0) 2.43.1]
+  ignore line: [COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_402ab]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_402ab.dir/link.txt --verbose=1]
+  ignore line: [/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -v CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -o cmTC_402ab   -L/app/build/CMakeFiles/CMakeTmp/. ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/lto-wrapper]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.0 (crosstool-NG 1.27.0) ]
+  ignore line: [COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_402ab' '-L/app/build/CMakeFiles/CMakeTmp/.' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_402ab.']
+  link line: [ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2 --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --eh-frame-hdr -melf64lriscv -X -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_402ab /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o -L/app/build/CMakeFiles/CMakeTmp/. -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0 -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2] ==> ignore
+    arg [--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-melf64lriscv] ==> ignore
+    arg [-X] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-musl-riscv64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_402ab] ==> ignore
+    arg [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o]
+    arg [-L/app/build/CMakeFiles/CMakeTmp/.] ==> dir [/app/build/CMakeFiles/CMakeTmp/.]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_402ab.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  collapse library dir [/app/build/CMakeFiles/CMakeTmp/.] ==> [/app/build/CMakeFiles/CMakeTmp], skipping non-system directory
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/lib]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  implicit dirs: [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0;/x-tools/riscv64-unknown-linux-musl/lib/gcc;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/lib;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58365/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58365.dir/build.make CMakeFiles/cmTC_58365.dir/build
+gmake[1]: Entering directory '/app/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o
+/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++ --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot   -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d     -v -o CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++
+Target: riscv64-unknown-linux-musl
+Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c,c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (crosstool-NG 1.27.0) 
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/'
+ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/cc1plus -quiet -v -imultilib . -iprefix /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/ -isysroot /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_58365.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcmodel=medany -mcmodel=medany -mabi=lp64d -march=rv64imafdc_zicsr_zifencei -misa-spec=20191213 -mtls-dialect=trad -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccwUK1ZN.s
+GNU C++17 (crosstool-NG 1.27.0) version 14.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 11.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0"
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/."
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward"
+ignoring nonexistent directory "/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/include"
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include"
+ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/.
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include
+End of search list.
+Compiler executable checksum: 59d61bc1059b9ec7eaac828fbeec472e
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/'
+ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwUK1ZN.s
+GNU assembler version 2.43.1 (riscv64-unknown-linux-musl) using BFD version (crosstool-NG 1.27.0) 2.43.1
+COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_58365
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58365.dir/link.txt --verbose=1
+/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++ --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -v CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_58365   -L/app/build/CMakeFiles/CMakeTmp/. 
+Using built-in specs.
+COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++
+COLLECT_LTO_WRAPPER=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/lto-wrapper
+Target: riscv64-unknown-linux-musl
+Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c,c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (crosstool-NG 1.27.0) 
+COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_58365' '-L/app/build/CMakeFiles/CMakeTmp/.' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_58365.'
+ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2 --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --eh-frame-hdr -melf64lriscv -X -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_58365 /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o -L/app/build/CMakeFiles/CMakeTmp/. -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0 -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_58365' '-L/app/build/CMakeFiles/CMakeTmp/.' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_58365.'
+gmake[1]: Leaving directory '/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0]
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/.]
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward]
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include]
+    add: [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+    add: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/.] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0/backward]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+  collapse include dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  implicit include dirs: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include/c++/14.2.0/backward;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/include;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/include;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58365/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58365.dir/build.make CMakeFiles/cmTC_58365.dir/build]
+  ignore line: [gmake[1]: Entering directory '/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++ --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot   -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d     -v -o CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.0 (crosstool-NG 1.27.0) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/']
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/cc1plus -quiet -v -imultilib . -iprefix /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/ -isysroot /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_58365.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcmodel=medany -mcmodel=medany -mabi=lp64d -march=rv64imafdc_zicsr_zifencei -misa-spec=20191213 -mtls-dialect=trad -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccwUK1ZN.s]
+  ignore line: [GNU C++17 (crosstool-NG 1.27.0) version 14.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0"]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/."]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward"]
+  ignore line: [ignoring nonexistent directory "/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/include"]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include"]
+  ignore line: [ignoring duplicate directory "/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/riscv64-unknown-linux-musl/.]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include/c++/14.2.0/backward]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/include]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/include]
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Compiler executable checksum: 59d61bc1059b9ec7eaac828fbeec472e]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/']
+  ignore line: [ /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccwUK1ZN.s]
+  ignore line: [GNU assembler version 2.43.1 (riscv64-unknown-linux-musl) using BFD version (crosstool-NG 1.27.0) 2.43.1]
+  ignore line: [COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-v' '-o' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_58365]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58365.dir/link.txt --verbose=1]
+  ignore line: [/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++ --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot -mcmodel=medany -mabi=lp64d -mcmodel=medany -mabi=lp64d   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -v CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_58365   -L/app/build/CMakeFiles/CMakeTmp/. ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/x-tools/riscv64-unknown-linux-musl/bin/riscv64-unknown-linux-musl-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/lto-wrapper]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/src/gcc/configure --build=aarch64-build_unknown-linux-gnu --host=aarch64-build_unknown-linux-gnu --target=riscv64-unknown-linux-musl --prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --exec_prefix=/home/eric/x-tools/riscv64-unknown-linux-musl --with-sysroot=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-languages=c c++ --with-pkgversion='crosstool-NG 1.27.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpfr=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-mpc=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --with-isl=/home/eric/crosstool-ng/.build/riscv64-unknown-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-plugin --disable-nls --disable-multilib --with-local-prefix=/home/eric/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --enable-long-long]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 14.2.0 (crosstool-NG 1.27.0) ]
+  ignore line: [COMPILER_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/:/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib/:/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot' '-mcmodel=medany' '-mcmodel=medany' '-mabi=lp64d' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-v' '-o' 'cmTC_58365' '-L/app/build/CMakeFiles/CMakeTmp/.' '-shared-libgcc' '-march=rv64imafdc_zicsr_zifencei' '-misa-spec=20191213' '-mtls-dialect=trad' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_58365.']
+  link line: [ /x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2 --sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot --eh-frame-hdr -melf64lriscv -X -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_58365 /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o -L/app/build/CMakeFiles/CMakeTmp/. -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0 -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc -L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib -L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o /x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../libexec/gcc/riscv64-unknown-linux-musl/14.2.0/collect2] ==> ignore
+    arg [--sysroot=/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-melf64lriscv] ==> ignore
+    arg [-X] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-musl-riscv64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_58365] ==> ignore
+    arg [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o]
+    arg [-L/app/build/CMakeFiles/CMakeTmp/.] ==> dir [/app/build/CMakeFiles/CMakeTmp/.]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib]
+    arg [-L/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib] ==> dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_58365.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o]
+    arg [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o] ==> obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o]
+  collapse obj [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  collapse library dir [/app/build/CMakeFiles/CMakeTmp/.] ==> [/app/build/CMakeFiles/CMakeTmp], skipping non-system directory
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc] ==> [/x-tools/riscv64-unknown-linux-musl/lib/gcc]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/bin/../lib/gcc/riscv64-unknown-linux-musl/14.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/lib]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib]
+  collapse library dir [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib] ==> [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib/crt1.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crti.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtbegin.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtend.o;/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/crtn.o]
+  implicit dirs: [/x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0;/x-tools/riscv64-unknown-linux-musl/lib/gcc;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/lib;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/lib;/x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/lib]
+  implicit fwks: []
+
+

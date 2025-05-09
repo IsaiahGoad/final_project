@@ -1,0 +1,17 @@
+CMakeFiles/bmp280_shared.dir/bmp280_i2c.c.o: /app/bmp280_i2c.c \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/stdc-predef.h \
+ /app/bmp280_i2c.h \
+ /x-tools/riscv64-unknown-linux-musl/lib/gcc/riscv64-unknown-linux-musl/14.2.0/include/stdint.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/stdint.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/bits/alltypes.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/bits/stdint.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/unistd.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/features.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/bits/posix.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/stdio.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/string.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/strings.h \
+ /app/wiringx.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/errno.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/bits/errno.h \
+ /x-tools/riscv64-unknown-linux-musl/riscv64-unknown-linux-musl/sysroot/usr/include/syslog.h
