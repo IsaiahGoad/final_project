@@ -48,10 +48,18 @@ find_and_check_library(CRYPTO_LIB crypto openssl)
 add_executable(subscriber subscriber.c)
 add_executable(publisher publisher.c)
 
-# Link libraries
-# The publisher doesn't need any additional library linking as it's running on the host
-# or rasberry pi (unless doing the bonus for receiving messages from the duo)
-target_link_libraries(publisher ${CJSON_LIB} ${MQTT_LIB} ${OPEN_SSL_LIB} ${CRYPTO_LIB})
+# The subscriber is running on the duo and you'll need to link your libraries.
+# Add your library names at the end
+# Also make sure you copy the libraries to /usr/lib on the duo
+target_link_libraries(subscriber
+    ${CJSON_LIB}
+    ${MQTT_LIB}
+    ${OPEN_SSL_LIB}
+    ${CRYPTO_LIB}
+    wiringx
+    bmp280_shared
+    ssd1306
+)
 
 # The subscriber is running on the duo and you'll need to link your libraries.
 # Add your library names at the end
