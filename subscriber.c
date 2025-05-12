@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ssd1306.h>
 #include <mosquitto.h>
 #include <cjson/cJSON.h>
-
+#include <linux_i2c.h>
+#include <bmp280_i2c.h>
 void message_callback(struct mosquitto *mosq, void *userdata, const struct mosquitto_message *message)
 {
+    char msg[200] = {0};
+    ssd1306_init(0);
+    ssd1306_oled_onoff(1);
+    ssd1306_oled_default_config(64, 128);
     if (message->payloadlen)
     {
         // uncomment for debugging if needed
@@ -25,8 +30,25 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
             const cJSON *task = cJSON_GetObjectItemCaseSensitive(root, "task");
             if (cJSON_IsString(task) && (task->valuestring != NULL))
             {
+                struct bmp280_i2c result = read_temp_pressure();
                 printf("task: %s\n", task->valuestring);
 
+                    if(strcmp(task,"get_temperature"))
+                    {
+                        strncpy(msg, result.temperature, sizeof(msg));
+                        ssd1306_oled_write_string(0, msg);
+                    }
+                    if(strcmp(task,"get_pressure"))
+                    {
+                        strncpy(msg, result.pressure, sizeof(msg));
+                        ssd1306_oled_write_string(0, msg);
+                    }
+                    if(strcmp(task,"get_temperature_pressure"))
+                    {
+                        strncpy(msg, result.pressure, sizeof(msg));
+                        
+                        ssd1306_oled_write_string(0, msg);
+                    }
                 // check task->valuestring and see what it is.
                 // Call your bmp280 library functions
                 // Print to your OLED
