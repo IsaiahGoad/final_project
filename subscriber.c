@@ -33,19 +33,19 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
                 struct bmp280_i2c result = read_temp_pressure();
                 printf("task: %s\n", task->valuestring);
 
-                    if(strcmp(task,"get_temperature")==0)
+                    if(strcmp(task->valuestring,"get_temperature")==0)
                     {
                         ssd1306_oled_clear_screen();
                         strncpy(msg, result.temperature, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
                     }
-                    if(strcmp(task,"get_pressure")==0)
+                    if(strcmp(task->valuestring,"get_pressure")==0)
                     {
                         ssd1306_oled_clear_screen();
                         strncpy(msg, result.pressure, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
                     }
-                    if(strcmp(task,"get_temperature_pressure")==0)
+                    if(strcmp(task->valuestring,"get_temperature_pressure")==0)
                     {
                         ssd1306_oled_clear_screen();
                         strncpy(msg, result.temperature, sizeof(msg));
@@ -66,7 +66,7 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
                 printf("Number: %d\n", int_msg->valueint);
                 // Print to OLED
                 ssd1306_oled_clear_screen();
-                        strncpy(msg, int_msg, sizeof(msg));
+                        strncpy(msg, int_msg->valueint, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
             }
 
