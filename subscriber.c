@@ -49,6 +49,8 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
                     {
                         ssd1306_oled_clear_screen();
                         strncpy(msg, result.temperature, sizeof(msg));
+                        addChar(msg, " ");
+                        addChar(msg,result.pressure);
                         ssd1306_oled_write_string(0, msg);
                     }
                 // check task->valuestring and see what it is.
