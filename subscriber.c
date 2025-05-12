@@ -35,18 +35,20 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
 
                     if(strcmp(task,"get_temperature"))
                     {
+                        ssd1306_oled_clear_screen();
                         strncpy(msg, result.temperature, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
                     }
                     if(strcmp(task,"get_pressure"))
                     {
+                        ssd1306_oled_clear_screen();
                         strncpy(msg, result.pressure, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
                     }
                     if(strcmp(task,"get_temperature_pressure"))
                     {
-                        strncpy(msg, result.pressure, sizeof(msg));
-                        
+                        ssd1306_oled_clear_screen();
+                        strncpy(msg, result.temperature, sizeof(msg));
                         ssd1306_oled_write_string(0, msg);
                     }
                 // check task->valuestring and see what it is.
@@ -61,6 +63,9 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
             {
                 printf("Number: %d\n", int_msg->valueint);
                 // Print to OLED
+                ssd1306_oled_clear_screen();
+                        strncpy(msg, int_msg, sizeof(msg));
+                        ssd1306_oled_write_string(0, msg);
             }
 
             // cJSON object named "print_msg".
