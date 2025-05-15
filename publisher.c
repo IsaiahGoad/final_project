@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     }
 
     // Connect to an MQTT broker
-    if (mosquitto_connect(mosq, "192.168.2.176", 1883, 60) != MOSQ_ERR_SUCCESS)
+    if (mosquitto_connect(mosq, "localhost", 1883, 60) != MOSQ_ERR_SUCCESS)
     {
         fprintf(stderr, "Could not connect to broker\n");
         exit(-1);

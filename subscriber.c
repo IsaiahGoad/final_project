@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ssd1306.h>
+#include <string.h>
+#include "ssd1306.h"
 #include <mosquitto.h>
 #include <cjson/cJSON.h>
-#include <linux_i2c.h>
-#include <bmp280_i2c.h>
+#include "bmp280_i2c.h"
 void message_callback(struct mosquitto *mosq, void *userdata, const struct mosquitto_message *message)
 {
     char msg[200] = {0};
@@ -36,21 +36,19 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
                     if(strcmp(task->valuestring,"get_temperature")==0)
                     {
                         ssd1306_oled_clear_screen();
-                        strncpy(msg, result.temperature, sizeof(msg));
+                        sprintf(msg, "%.2f", result.temperature);
                         ssd1306_oled_write_string(0, msg);
                     }
                     if(strcmp(task->valuestring,"get_pressure")==0)
                     {
                         ssd1306_oled_clear_screen();
-                        strncpy(msg, result.pressure, sizeof(msg));
+                        sprintf(msg, "%.2f", result.temperature);
                         ssd1306_oled_write_string(0, msg);
                     }
                     if(strcmp(task->valuestring,"get_temperature_pressure")==0)
                     {
                         ssd1306_oled_clear_screen();
-                        strncpy(msg, result.temperature, sizeof(msg));
-                        addChar(msg, " ");
-                        addChar(msg,result.pressure);
+                      sprintf(msg, "%.2f %.2f", result.temperature, result.pressure);
                         ssd1306_oled_write_string(0, msg);
                     }
                 // check task->valuestring and see what it is.
@@ -66,7 +64,7 @@ void message_callback(struct mosquitto *mosq, void *userdata, const struct mosqu
                 printf("Number: %d\n", int_msg->valueint);
                 // Print to OLED
                 ssd1306_oled_clear_screen();
-                        strncpy(msg, int_msg->valueint, sizeof(msg));
+                sprintf(msg, "%d", int_msg->valueint);
                         ssd1306_oled_write_string(0, msg);
             }
 
@@ -111,7 +109,7 @@ int main(int argc, char *argv[])
     mosquitto_message_callback_set(mosq, message_callback);
 
     // Connect to an MQTT broker
-    if (mosquitto_connect(mosq, "192.168.2.176", 1883, 60) != MOSQ_ERR_SUCCESS)
+    if (mosquitto_connect(mosq, "localhost", 1883, 60) != MOSQ_ERR_SUCCESS)
     {
         fprintf(stderr, "Could not connect to broker\n");
         exit(-1);

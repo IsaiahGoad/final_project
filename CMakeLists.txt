@@ -51,17 +51,7 @@ add_executable(publisher publisher.c)
 # The subscriber is running on the duo and you'll need to link your libraries.
 # Add your library names at the end
 # Also make sure you copy the libraries to /usr/lib on the duo
-target_link_libraries(subscriber
-    ${CJSON_LIB}
-    ${MQTT_LIB}
-    ${OPEN_SSL_LIB}
-    ${CRYPTO_LIB}
-    wiringx
-    bmp280_shared
-    ssd1306
-)
+target_link_libraries(subscriber ${CJSON_LIB} ${MQTT_LIB} ${OPEN_SSL_LIB} ${CRYPTO_LIB} wiringx bmp280_shared ssd1306)
 
-# The subscriber is running on the duo and you'll need to link your libraries.
-# Add your library names at the end
-# Also make sure you copy the libraries to /usr/lib on the duo
-target_link_libraries(subscriber ${CJSON_LIB} ${MQTT_LIB} ${OPEN_SSL_LIB} ${CRYPTO_LIB})
+
+target_link_libraries(publisher ${CJSON_LIB} ${MQTT_LIB} ${OPEN_SSL_LIB} ${CRYPTO_LIB})
