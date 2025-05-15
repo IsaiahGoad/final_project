@@ -1,81 +1,83 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "ssd1306.h"
+
+#include <ssd1306.h>
 #include <mosquitto.h>
 #include <cjson/cJSON.h>
-#include "bmp280_i2c.h"
+#include <linux_i2c.h>
+#include <bmp280_i2c.h>
+
 void message_callback(struct mosquitto *mosq, void *userdata, const struct mosquitto_message *message)
 {
     char msg[200] = {0};
     ssd1306_init(0);
     ssd1306_oled_onoff(1);
     ssd1306_oled_default_config(64, 128);
+
     if (message->payloadlen)
     {
-        // uncomment for debugging if needed
-        // printf("%s %s\n", message->topic, (char *)message->payload);
         cJSON *root = cJSON_Parse(message->payload);
         if (root)
         {
-            // These are examples of ways strings and numbers can be sent
-            // via mqtt. You'll need to add support here for additional tasking.
-
-            // You'll need to use strncmp or strcmp to check if the valuestring
-            // is "get_temperature" or "get_pressure" or "get_temperature_pressure"
-            // Based on that valuestring, you will use your bmp280 library function
-            // to get the temperature, pressure or both.
-            // Use your ssd1306 library to write the value(s) to the OLED.
-            // Bonus: publish a message back to the host/PI the contains the message
             const cJSON *task = cJSON_GetObjectItemCaseSensitive(root, "task");
             if (cJSON_IsString(task) && (task->valuestring != NULL))
             {
                 struct bmp280_i2c result = read_temp_pressure();
                 printf("task: %s\n", task->valuestring);
 
-                    if(strcmp(task->valuestring,"get_temperature")==0)
-                    {
-                        ssd1306_oled_clear_screen();
-                        sprintf(msg, "%.2f", result.temperature);
-                        ssd1306_oled_write_string(0, msg);
-                    }
-                    if(strcmp(task->valuestring,"get_pressure")==0)
-                    {
-                        ssd1306_oled_clear_screen();
-                        sprintf(msg, "%.2f", result.temperature);
-                        ssd1306_oled_write_string(0, msg);
-                    }
-                    if(strcmp(task->valuestring,"get_temperature_pressure")==0)
-                    {
-                        ssd1306_oled_clear_screen();
-                      sprintf(msg, "%.2f %.2f", result.temperature, result.pressure);
-                        ssd1306_oled_write_string(0, msg);
-                    }
-                // check task->valuestring and see what it is.
-                // Call your bmp280 library functions
-                // Print to your OLED
+                if (strcmp(task->valuestring, "get_temperature") == 0)
+                {
+                    ssd1306_oled_clear_screen();
+                    snprintf(msg, sizeof(msg), "Temp: %.2f C", result.temperature);
+                    ssd1306_oled_write_string(0, msg);
+                }
+
+                else if (strcmp(task->valuestring, "get_pressure") == 0)
+                {
+                    ssd1306_oled_clear_screen();
+                    snprintf(msg, sizeof(msg), "Pres: %.3f kPa", result.pressure);
+                    ssd1306_oled_write_string(0, msg);
+                }
+
+                else if (strcmp(task->valuestring, "get_temperature_pressure") == 0)
+                {
+                    ssd1306_oled_clear_screen();
+                    snprintf(msg, sizeof(msg), "T: %.2fC P: %.3fkPa", result.temperature, result.pressure);
+                    ssd1306_oled_write_string(0, msg);
+
+                    // BONUS 1: Publish to "taskingcomplete"
+                    cJSON *response = cJSON_CreateObject();
+                    cJSON_AddNumberToObject(response, "temp", result.temperature);
+                    cJSON_AddNumberToObject(response, "pressure", result.pressure);
+
+                    char *json_out = cJSON_PrintUnformatted(response);
+                    mosquitto_publish(mosq, NULL, "taskingcomplete", strlen(json_out), json_out, 0, false);
+
+                    free(json_out);
+                    cJSON_Delete(response);
+                    // END BONUS 1
+                }
             }
 
-            // cJSON object named "int_msg"
-            // This is simply a message that can be printed onto the OLED.
             const cJSON *int_msg = cJSON_GetObjectItemCaseSensitive(root, "int_msg");
             if (cJSON_IsNumber(int_msg))
             {
                 printf("Number: %d\n", int_msg->valueint);
-                // Print to OLED
                 ssd1306_oled_clear_screen();
+                snprintf(msg, sizeof(msg), "%d", int_msg->valueint);
+                ssd1306_oled_write_string(0, msg);
                 sprintf(msg, "%d", int_msg->valueint);
                         ssd1306_oled_write_string(0, msg);
             }
 
-            // cJSON object named "print_msg".
-            // This is simply a message that can be printed onto the OLED.
-            // This is similar to "task", except you just print to the OLED
-            // and do NOT need to compare any values.
-
-            // cJSON object named "morse_msg". (similar to print_msg)
-            // This should blink the onboard LED.
-            // This is bonus
+            const cJSON *print_msg = cJSON_GetObjectItemCaseSensitive(root, "print_msg");
+            if (cJSON_IsString(print_msg) && (print_msg->valuestring != NULL))
+            {
+                ssd1306_oled_clear_screen();
+                strncpy(msg, print_msg->valuestring, sizeof(msg));
+                ssd1306_oled_write_string(0, msg);
+            }
 
             cJSON_Delete(root);
         }
